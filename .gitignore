@@ -14,7 +14,6 @@
 .gradle/buildOutputCleanup/outputFiles.bin
 .gradle/file-system.probe
 .gradle/vcs-1/gc.properties
-build.gradle
 build/classes/java/main/com/razman/Main.class
 build/classes/java/main/com/razman/Person.class
 build/classes/java/main/com/razman/PersonManager.class
