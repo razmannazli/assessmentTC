@@ -38,7 +38,7 @@ public class Main
         PersonManager.combineParentIDForSameChild(parentGroupMap, nameMap);
 
         System.out.println("-------Start Exercise 1-----------");
-        nameMap.entrySet().forEach(entry -> {
+        parentGroupMap.entrySet().forEach(entry -> {
             if (entry.getValue().size() > 0) {
                 String textSpace = "";
                 ArrayList<String> parentID = new ArrayList<>();
@@ -70,7 +70,7 @@ public class Main
         System.out.println("-------End Exercise 1-----------");
 
         System.out.println("-------Start Exercise 2-----------");
-        ArrayList<String> finalExistedList = existedList;
+        ArrayList<String> finalExistedList = new ArrayList<>();
         topPersonList.entrySet().forEach(entry -> {
             sortedTopPerson.add(entry.getKey());
         });

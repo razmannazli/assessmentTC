@@ -115,12 +115,7 @@ public class PersonManager {
             }
         });
         String temp = partnerID.get();
-        boolean existed = false;
-        for (int i=0; i<existedList.size(); i++) {
-            if (existedList.get(i).equals(existed)) {
-                existed = true;
-            }
-        }
+        boolean existed = PersonManager.checkExistingPartner(existedList, temp);
         if (!existed) {
             for (int i=0; i<list.size(); i++) {
                 if (temp.equals(list.get(i).getRecordID()) && !name.equals(list.get(i).getName())) {
