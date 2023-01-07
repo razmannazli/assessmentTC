@@ -135,4 +135,14 @@ public class PersonManager {
             System.out.println("");
         }
     }
+
+    public static boolean checkExistingPartner(ArrayList<String> finalExistedList, String id) {
+        boolean existed = false;
+        for (int j = 0; j< finalExistedList.size(); j++) {
+            if (finalExistedList.get(j).equals(id)){
+                existed = true;
+            }
+        }
+        return existed;
+    }
 }

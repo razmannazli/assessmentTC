@@ -79,12 +79,7 @@ public class Main
             String key = sortedTopPerson.get(i);
             topPersonList.entrySet().forEach(entry -> {
                 if (key.equals(entry.getKey())) {
-                    boolean existed = false;
-                    for (int j = 0; j< finalExistedList.size(); j++) {
-                        if (finalExistedList.get(j).equals(entry.getKey())){
-                            existed = true;
-                        }
-                    }
+                    boolean existed = PersonManager.checkExistingPartner(finalExistedList, entry.getKey());
                     if (!existed) {
                         String textSpace = "";
                         System.out.print(entry.getValue());
